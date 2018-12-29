@@ -115,6 +115,7 @@ function printQuote() {
 
   string += '</p>';
   document.getElementById('quote-box').innerHTML = string;
+  changeBackground();
 
 }
 
@@ -177,4 +178,3 @@ var colorTimer = window.setInterval(changeBackground, 30000);
 
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
-document.getElementById('loadQuote').addEventListener("click", changeBackground, false);
