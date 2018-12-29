@@ -1,5 +1,5 @@
 # Random Quote Generator Project #1
-<h3>Student:</h3><h2>Stephen Parker</h2>
+<h3>Student:</h3>Stephen Parker
 <br />
 <p>Langages Used:</p>
 <ol>
