@@ -155,17 +155,6 @@ function changeBackground() {
 
 /*
 
-QUOTE ONCLICK FUNCTIONS
-
-Explanation
-- These two document. functions exist to have onClick methods for the "Show Another Quote" button on the DOM 
-- I added an additional document.getElementById function to the bottom that allowed the background to be changed by clicking the 'Show another quote' buttons
-- 
-
-*/
-
-/*
-
 TIMOUT/TIMING FUNCTIONS
 
 Explanation
@@ -176,5 +165,15 @@ Explanation
 var quoteTimer = window.setInterval(printQuote, 30000);
 var colorTimer = window.setInterval(changeBackground, 30000);
 
+/*
+QUOTE ONCLICK FUNCTIONS
+
+Explanation
+- These two document. functions exist to have onClick methods for the "Show Another Quote" button on the DOM 
+- I added an additional document.getElementById function to the bottom that allowed the background to be changed by clicking the 'Show another quote' buttons
+- 
+
+
+*/
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
