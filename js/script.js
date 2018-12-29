@@ -116,8 +116,9 @@ function printQuote() {
   string += '</p>';
   document.getElementById('quote-box').innerHTML = string;
 
-
 }
+
+
 
 /*
 
@@ -161,6 +162,19 @@ Explanation
 - 
 
 */
+
+/*
+
+TIMOUT/TIMING FUNCTIONS
+
+Explanation
+- I created the quoteTimer and colorTimer variables to use the window.setInterval function that allows the quote & the color to change every 30secs
+
+*/
+
+var quoteTimer = window.setInterval(printQuote, 30000);
+var colorTimer = window.setInterval(changeBackground, 30000);
+
 
 document.getElementById('loadQuote').addEventListener("click", printQuote, false);
 document.getElementById('loadQuote').addEventListener("click", changeBackground, false);
