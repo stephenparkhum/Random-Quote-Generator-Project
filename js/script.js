@@ -154,7 +154,6 @@ function changeBackground() {
 }
 
 /*
-
 TIMOUT/TIMING FUNCTIONS
 
 Explanation
@@ -171,8 +170,6 @@ QUOTE ONCLICK FUNCTIONS
 Explanation
 - These two document. functions exist to have onClick methods for the "Show Another Quote" button on the DOM 
 - I added an additional document.getElementById function to the bottom that allowed the background to be changed by clicking the 'Show another quote' buttons
-- 
-
 
 */
 
