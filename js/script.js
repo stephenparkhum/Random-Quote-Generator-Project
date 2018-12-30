@@ -136,6 +136,7 @@ Part 1:
 Part 2: 
 - The second function (changeBackground) is relatively straightforward
 - It runs the backgroundRandom() function and that result is stored to the newColor variable
+- I have also included the 
 - Finally, in this function, there's CSS modifier that changes the background color to the newColor value 
 
 */
@@ -145,12 +146,24 @@ function backgroundRandom() {
   var g = Math.floor(Math.random() * 256);
   var b = Math.floor(Math.random() * 256);
   var finalColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+  var buttonColor = [];
+  buttonColor.push(r, g, b);
+  for (var i = 0; i < buttonColor.length; i++) {
+    buttonColor[i] -= 50;
+    if (buttonColor[i] <= 50) {
+      buttonColor[i] -= 15;
+    }
+  }
+  var buttonColorText = 'rgb(' + buttonColor[0] + ',' + buttonColor[1] + ',' + buttonColor[2] + ')';
+
+  document.getElementById('loadQuote').style.backgroundColor = buttonColorText;
   return finalColor;
 }
 
 function changeBackground() {
   var newColor = backgroundRandom();
   document.body.style.background = newColor;
+
 }
 
 /*
